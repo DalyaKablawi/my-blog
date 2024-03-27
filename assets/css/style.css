@@ -1,0 +1,14 @@
+.custom-navbar a {
+  color: black;
+}
+
+.custom-navbar {
+  direction: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#image {
+  height: 100vh;
+  background-image: url("/assets/collage-inspiration-motivational-image.jpg");
+}
