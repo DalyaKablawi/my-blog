@@ -1,14 +1,27 @@
+body {
+  background-color: rgba(178, 216, 216);
+}
+
 .custom-navbar a {
   color: black;
+  font-size: 30px;
 }
 
 .custom-navbar {
-  direction: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: #66b2b2;
+  margin: 40px 0px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
-#image {
-  height: 100vh;
-  background-image: url("/assets/collage-inspiration-motivational-image.jpg");
+.custom-spacing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 20px;
 }
