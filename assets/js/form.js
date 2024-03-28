@@ -1,15 +1,22 @@
-const form = document.querySelector("#newpost");
-const username = document.querySelector("#exampleFormControlInput1");
-const title = document.querySelector("#exampleFormControlInput2");
-const entry = document.querySelector("#exampleFormControlTextarea1");
+const formEl = document.querySelector("#newpost");
+const usernameEl = document.querySelector("#exampleFormControlInput1");
+const titleEl = document.querySelector("#exampleFormControlInput2");
+const entryEl = document.querySelector("#exampleFormControlTextarea1");
 
-form.addEventListener("submit", function (event) {
+
+formEl.addEventListener("submit", function (event) {
   event.preventDefault();
-  localStorage.setItem("Username", username.value);
-  localStorage.setItem("Entry Title", title.value);
-  if (username.value === "" || title.value === "" || entry.value === "") {
+  const userData = {
+    username: usernameEl.value,
+    title: titleEl.value,
+    entry: entryEl.value,
+  };
+  const dataString = JSON.stringify(userData);
+  localStorage.setItem("Blog Post Entry", dataString);
+  if (usernameEl.value === "" || titleEl.value === "" || entryEl.value === "") {
     alert("Please complete the form!");
     return;
   }
   window.location.href = "blog.html";
+
 });
