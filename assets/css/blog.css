@@ -1,4 +1,20 @@
+body {
+  background-color: rgba(178, 216, 216) !important;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
 #back-button {
   font-size: 20px;
   padding: 0px;
+}
+
+#blog-posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
