@@ -6,6 +6,8 @@ modeToggleBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
 });
 
+/*This function declaration allows entries stored in local storage to be parsed into an array of objects. Then, for each object an element is created and the corresponding element of the object is selected and appended to it. 
+Then, all new elements are appended to a container which exists in the HTML file*/
 function addPost() {
   const userDataString = localStorage.getItem("Blog Post Entries");
 
