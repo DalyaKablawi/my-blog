@@ -55,6 +55,6 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## URLs
 
-[GitHub repository URL](https://github.com/DalyaKablawi/portfolio-takeone)
+[GitHub repository URL](https://github.com/DalyaKablawi/my-blog)
 
-[Deployed application URL](https://dalyakablawi.github.io/portfolio-takeone/)
+[Deployed application URL](https://dalyakablawi.github.io/my-blog/)
