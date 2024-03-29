@@ -1,15 +1,10 @@
 const modeButton = document.getElementById("mode-button");
 const body = document.body;
 const blogPostsContainer = document.querySelector("#blog-posts-container");
-// function changeMode() {
-//   if (body.className.includes("light-mode")) {
-//     body.className = body.className.replace("light-mode", "dark-mode");
-//   } else {
-//     body.className = body.className.replace("dark-mode", "light-mode");
-//   }
-// }
-
-// modeButton.addEventListener("click", changeMode);
+const modeToggleBtn = document.getElementById("modeToggle");
+modeToggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
 
 function addPost() {
   const userDataString = localStorage.getItem("Blog Post Entries");
@@ -21,7 +16,7 @@ function addPost() {
       blogPostParent.setAttribute("class", "blog-entry");
       blogPostParent.setAttribute(
         "style",
-        "background-color: #E0FDCD; margin-top: 10px; padding: 10px; border:5px solid black;"
+        "background-color: #407088; margin-top: 10px; padding: 10px; border:5px solid black;"
       );
 
       const titleElement = document.createElement("h2");

@@ -1,10 +1,61 @@
-body {
-  background-color: rgba(178, 216, 216) !important;
+body,
+.bg-custom-color,
+#footer,
+#modeToggle {
+  background-color: rgba(178, 216, 216);
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-link {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+#modeToggle {
+  margin-top: 30px;
+
+  border: black solid 2px;
+  border-radius: 20%;
+  background-color: beige;
+}
+
+.dark-mode #modeToggle {
+  background-color: beige;
+}
+
+.card-body {
+  padding: 0px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .dark-mode {
   background-color: #333;
   color: #fff;
+}
+
+.dark-mode .bg-custom-color {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode #footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .btn-link {
+  color: #fff;
+}
+
+.dark-mode #back-button {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode .navbar-toggler {
+  border: white;
 }
 
 #back-button {
